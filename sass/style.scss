@@ -20,16 +20,15 @@ body{
 
 #container{
 	background-color:#000;
-	margin-top:25px;
 	min-height:400px;
 	width:640px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 5% auto auto auto;
 }
 
 #title{
+	background-color: $base-color;
 	text-align:left;
-	padding-bottom:8px;
+	padding-bottom:10px;
 	font-family: $font-stack;
 }
 
@@ -39,13 +38,13 @@ body{
 
 .search_box{
 	font-size: 60px;
-	width: 50%;
+	width: 700px;
 	border: 0px;
 	font-family: $font-stack;
 	background-color: $base-color;
 	color: $accent-color;
 	display: block;
-	margin: 5% auto 10px auto;
+	margin: 5% auto 5% auto;
 }
 
 ::-webkit-input-placeholder {

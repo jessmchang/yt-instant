@@ -77,38 +77,37 @@ body {
 /* line 21, ../sass/style.scss */
 #container {
   background-color: #000;
-  margin-top: 25px;
   min-height: 400px;
   width: 640px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 5% auto auto auto;
 }
 
-/* line 30, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 #title {
+  background-color: #493848;
   text-align: left;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
   font-family: "Roboto", Trebuchet, sans-serif;
 }
 
-/* line 36, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 #video {
   color: #bfb39b;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 .search_box {
   font-size: 60px;
-  width: 50%;
+  width: 700px;
   border: 0px;
   font-family: "Roboto", Trebuchet, sans-serif;
   background-color: #493848;
   color: #bfb39b;
   display: block;
-  margin: 5% auto 10px auto;
+  margin: 5% auto 5% auto;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: #665164;
 }
