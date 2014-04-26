@@ -1,0 +1,46 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+// Colors
+$base-color: #493848;
+$accent-color: #BFB39B;
+
+// Fonts
+$font-stack: 'Roboto', Trebuchet, sans-serif;
+
+body{
+	font-family: 100% $font-stack;
+	background-color: $base-color;
+	color: $accent-color;
+}
+
+#container{
+	margin: 25px auto 25px auto;
+}
+
+#title{
+	font-family: $font-stack;
+}
+
+#video{
+	color: $accent-color;
+}
+
+.search_box{
+	font-size: 60px;
+	width: 50%;
+	border: 0px;
+	font-family: $font-stack;
+	background-color: $base-color;
+	color: $accent-color;
+	display: block;
+	margin: 5% auto 10px auto;
+}
+
+::-webkit-input-placeholder {
+    color: #665164;
+}
