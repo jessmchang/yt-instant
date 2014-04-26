@@ -21,10 +21,16 @@ body{
 }
 
 #container{
+	background-color:#000;
+	margin-top:25px;
+	min-height:400px;
+	width:640px;
 	margin: 25px auto 25px auto;
 }
 
 #title{
+	text-align:left;
+	padding-bottom:8px;
 	font-family: $font-stack;
 }
 

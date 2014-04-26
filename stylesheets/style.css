@@ -78,20 +78,26 @@ body {
 
 /* line 23, ../sass/style.scss */
 #container {
+  background-color: #000;
+  margin-top: 25px;
+  min-height: 400px;
+  width: 640px;
   margin: 25px auto 25px auto;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 #title {
+  text-align: left;
+  padding-bottom: 8px;
   font-family: "Roboto", Trebuchet, sans-serif;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 #video {
   color: #bfb39b;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .search_box {
   font-size: 60px;
   width: 50%;
@@ -103,7 +109,7 @@ body {
   margin: 5% auto 10px auto;
 }
 
-/* line 46, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: #665164;
 }
