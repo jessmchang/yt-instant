@@ -16,7 +16,7 @@ body{
 	font-family: 100% $font-stack;
 	background-color: $base-color;
 	color: $accent-color;
-	min-height:400px;
+	height:400px;
 	width:640px;
 }
 
@@ -25,7 +25,8 @@ body{
 	margin-top:25px;
 	min-height:400px;
 	width:640px;
-	margin: 25px auto 25px auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #title{
