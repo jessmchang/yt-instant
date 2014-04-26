@@ -28,6 +28,7 @@ var handleData = function(response) {
 
 
 var getData = function(){
+	console.log("fetching data");
 	var keyword = encodeURIComponent($(this).val());
 	var gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyl4ObA4rSynwHIWd3k1Gr5bDRXnkYe1U';	
 	var xhr;
