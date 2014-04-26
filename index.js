@@ -44,6 +44,7 @@ var getData = function(){
 }
 
 $(document).ready(function() {
+	console.log("ready");
 	getData();
 	$(".search_box").keyup(getData);
 });

@@ -72,24 +72,26 @@ body {
   font-family: 100% "Roboto", Trebuchet, sans-serif;
   background-color: #493848;
   color: #bfb39b;
+  min-height: 400px;
+  width: 640px;
 }
 
-/* line 21, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 #container {
   margin: 25px auto 25px auto;
 }
 
-/* line 25, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 #title {
   font-family: "Roboto", Trebuchet, sans-serif;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 #video {
   color: #bfb39b;
 }
 
-/* line 33, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .search_box {
   font-size: 60px;
   width: 50%;
@@ -101,7 +103,7 @@ body {
   margin: 5% auto 10px auto;
 }
 
-/* line 44, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: #665164;
 }

@@ -16,6 +16,8 @@ body{
 	font-family: 100% $font-stack;
 	background-color: $base-color;
 	color: $accent-color;
+	min-height:400px;
+	width:640px;
 }
 
 #container{
