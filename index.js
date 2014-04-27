@@ -1,14 +1,15 @@
 var videoId = 0;
+var videoTitle = 0;
 var commentAPI;
 var gAPI;
 
 function handleHTML(id, content, response){
-	if(response.items){	//if title/video
+	if(response.items.length > 0){	//if title/video
 		var frame="<iframe width='640' height='385' src='http://www.youtube.com/embed/"+id+"'frameborder='0' allowfullscreen type='text/html'></iframe>";
 		$("#title").html(content);
 		$("#video").html(frame);
 	}
-	else if (response.feed){	//if comments
+	else if (response.feed.length > 0){	//if comments
 		$("div[id=comment_bunch").remove();
 		$("div[class=comment_author").remove();
 		$("div[class=comment_content").remove();
@@ -24,8 +25,6 @@ function handleHTML(id, content, response){
 
 var handleData = function(response) {
 	// console.log(response);
-	videoId = 0;
-	var videoTitle = 0;
 	console.log(response.items.length);
 	if(response.items.length > 0) {
 		console.log("reponse has items");
@@ -40,8 +39,7 @@ var handleData = function(response) {
 		performAJAX(commentAPI, handleComments);
 	}
 	else{
-		console.log("video id " + videoId);
-		console.log("video title " + videoTitle);
+		//still display id and video, but make title div say "no video found"	
 	}
 	handleHTML(videoId, videoTitle, response);
 }
