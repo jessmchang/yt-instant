@@ -9,6 +9,8 @@ function fillHTML(id, content, response){
 	}
 	else if (response.feed){	//if comments
 		console.log(content);
+		$("div[id=comment_author").remove();
+		$("div[id=comment_content").remove();
 		var i = 0;
 		for(i = 0; i < content.length; i += 2){
 			$("#video_info").append("<div id='comment_author'>"+content[i]+"</div><div id='comment_content'>"+content[i+1]+"</div>");
@@ -43,7 +45,6 @@ var handleComments = function(response) {
 	var commentContent;
 	var i = 0;
 	if(response.feed){
-		displayedComments = [];
 		comments = response.feed.entry;
 		while(i < 5){
 			individualComment = comments[i];
