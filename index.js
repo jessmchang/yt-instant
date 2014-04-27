@@ -47,7 +47,10 @@ var handleComments = function(response) {
 			commentAuthor = individualComment.author[0].name;
 			commentContent = individualComment.content;
 			commentTitle = individualComment.title;
-			console.log(individualComment + " " + commentAuthor + " " + commentContent + " " + commentTitle);
+			console.log(individualComment);
+			console.log(commentAuthor);
+			console.log(commentContent);
+			console.log(commentTitle);
 			i++;
 		}
 	}
