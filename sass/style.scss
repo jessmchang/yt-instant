@@ -37,6 +37,10 @@ body{
 	color: $accent-color;
 }
 
+#video_info{
+	height 200px;
+}
+
 .search_box{
 	font-size: 20px;
 	width: 800px;
@@ -46,7 +50,7 @@ body{
 	color: $base-color;
 	display: block;
 	margin: 5% auto 5% auto;
-	padding: 5px;
+	padding: 10px;
 }
 
 ::-webkit-input-placeholder {
