@@ -128,9 +128,10 @@ body {
 /* line 69, ../sass/style.scss */
 .comment_content {
   color: #1b1b1b;
+  font-size: 10px;
 }
 
-/* line 73, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .search_box {
   font-size: 20px;
   width: 800px;
@@ -143,7 +144,7 @@ body {
   padding: 10px;
 }
 
-/* line 85, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: #493848;
 }
