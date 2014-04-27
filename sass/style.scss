@@ -34,7 +34,11 @@ body{
 }
 
 #video{
-	height: 450px;
+	position: relative;
+	margin: 0 auto;
+	padding: 50px;
+	width: 640px;
+	height: 400px;
 	color: $accent-color;
 }
 

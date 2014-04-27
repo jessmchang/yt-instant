@@ -93,17 +93,21 @@ body {
 
 /* line 36, ../sass/style.scss */
 #video {
-  height: 450px;
+  position: relative;
+  margin: 0 auto;
+  padding: 50px;
+  width: 640px;
+  height: 400px;
   color: #bfb39b;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 #video_info {
   height: 200px;
   background-color: white;
 }
 
-/* line 46, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .search_box {
   font-size: 20px;
   width: 800px;
@@ -116,7 +120,7 @@ body {
   padding: 10px;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: #493848;
 }
