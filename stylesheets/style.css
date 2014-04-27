@@ -98,8 +98,8 @@ body {
 
 /* line 40, ../sass/style.scss */
 .search_box {
-  font-size: 60px;
-  width: 700px;
+  font-size: 20px;
+  width: 800px;
   border: 0px;
   font-family: "Roboto", Trebuchet, sans-serif;
   background-color: #493848;
