@@ -83,18 +83,17 @@ performAJAX = function(url, handleType){
 
 var getData = function(event){
 	var searchType = event.data.searchType;
-	// console.log(event);
-	// console.log("Value in search: " + $(".search_box").val());
+	console.log(searchType);
 	var keyword = encodeURIComponent($(".search_box").val());
 	// console.log("Keyword: " + keyword);
 	// console.log(keyword);
 	gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyl4ObA4rSynwHIWd3k1Gr5bDRXnkYe1U';
 	
 	if(searchType=="views"){
-		gAPI += "&order=viewCount";
+		gAPI += "&order=viewcount";
 	}
 	else if (searchType == "published"){
-		gAPI += "&order=published";
+		gAPI += "&order=date";
 	}
 	else if (searchType == "ratings"){
 		gAPI += "&order=rating";
