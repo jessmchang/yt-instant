@@ -11,7 +11,7 @@ function fillHTML(id, content, response){
 		console.log(content);
 		var i = 0;
 		for(i = 0; i < content.length; i += 2){
-			$("#video_info").append("<div id='comment_author'>"+response.feed[i]+"</div><div id='comment_content'>"+response.feed[i+1]+"</div>")
+			$("#video_info").append("<div id='comment_author'>"+content[i]+"</div><div id='comment_content'>"+content[i+1]+"</div>");
 		}
 	}
 	else{
