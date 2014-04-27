@@ -99,9 +99,10 @@ body {
 /* line 40, ../sass/style.scss */
 #video_info {
   height: 200px;
+  background-color: white;
 }
 
-/* line 44, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .search_box {
   font-size: 20px;
   width: 800px;
@@ -114,7 +115,7 @@ body {
   padding: 10px;
 }
 
-/* line 56, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: #493848;
 }
