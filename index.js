@@ -25,7 +25,7 @@ function handleHTML(id, content, response){
 
 var handleData = function(response) {
 	// console.log(response);
-	console.log(response.items.length);
+	console.log(response.items);
 	if(response.items.length > 0) {
 		console.log("reponse has items");
 		var videoIndex = 0;
@@ -39,7 +39,7 @@ var handleData = function(response) {
 		performAJAX(commentAPI, handleComments);
 	}
 	else{
-		videoTitle="No Video Found";
+		videoTitle="No Video Found-- Displaying Closest Match";
 		//still display id and video, but make title div say "no video found"	
 	}
 	handleHTML(videoId, videoTitle, response);
