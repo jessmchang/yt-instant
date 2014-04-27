@@ -4,12 +4,12 @@ var commentAPI;
 var gAPI;
 
 function handleHTML(id, content, response){
-	if(response.items.length > 0){	//if title/video
+	if(response.items){	//if title/video
 		var frame="<iframe width='640' height='385' src='http://www.youtube.com/embed/"+id+"'frameborder='0' allowfullscreen type='text/html'></iframe>";
 		$("#title").html(content);
 		$("#video").html(frame);
 	}
-	else if (response.feed.length > 0){	//if comments
+	else if (response.feed){	//if comments
 		$("div[id=comment_bunch").remove();
 		$("div[class=comment_author").remove();
 		$("div[class=comment_content").remove();
