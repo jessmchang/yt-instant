@@ -79,7 +79,7 @@ body {
   background-color: #30202f;
   min-height: 400px;
   width: 800px;
-  margin: 20px auto 100px auto;
+  margin: 20px auto 0px auto;
 }
 
 /* line 29, ../sass/style.scss */
@@ -105,9 +105,10 @@ body {
 #video_info {
   height: 200px;
   background-color: white;
+  width: 800px;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 .search_box {
   font-size: 20px;
   width: 800px;
@@ -120,7 +121,7 @@ body {
   padding: 10px;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: #493848;
 }

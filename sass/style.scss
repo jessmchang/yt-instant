@@ -23,7 +23,7 @@ body{
 	background-color: $darker-color;
 	min-height:400px;
 	width:800px;
-	margin: 20px auto 100px auto;
+	margin: 20px auto 0px auto;
 }
 
 #title{
@@ -46,6 +46,7 @@ body{
 #video_info{
 	height: 200px;
 	background-color: white;
+	width: 800px;
 }
 
 .search_box{
