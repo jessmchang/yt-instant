@@ -32,7 +32,7 @@ var handleData = function(response) {
 }
 
 var handleComments = function(response) {
-	console.log(response);
+	console.log(response.entry);
 }
 
 performAJAX = function(url, handleType){
