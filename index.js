@@ -13,7 +13,7 @@ function handleHTML(id, content, response){
 		$("div[class=comment_content").remove();
 		var i = 0;
 		for(i = 0; i < content.length; i += 2){
-			$("#video_info").append("<div id='comment_bunch'><div class='comment_author'>"+content[i]+"</div><div class='comment_content'>"+content[i+1]+"</div></div>");
+			$("#comment_area").append("<div id='comment_bunch'><div class='comment_author'>"+content[i]+"</div><div class='comment_content'>"+content[i+1]+"</div></div>");
 		}
 	}
 	else{
