@@ -54,6 +54,7 @@ var handleComments = function(response) {
 	var i = 0;
 	if(response.feed){
 		comments = response.feed.entry;
+		console.log("Comments: " + comments);
 		while(i < 5){
 			individualComment = comments[i];
 			commentAuthor = individualComment.author[0].name.$t;
