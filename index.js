@@ -63,6 +63,7 @@ var handleComments = function(response) {
 				commentContent = individualComment.content.$t;
 				displayedComments.push(commentAuthor);
 				displayedComments.push(commentContent);
+				console.log(displayedComments);
 				i++;
 			}
 		}
