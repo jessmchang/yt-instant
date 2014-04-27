@@ -2,16 +2,19 @@ var videoId = 0;
 var commentAPI;
 
 function fillHTML(id, content, response){
-	if(response.items){
+	if(response.items){	//if title/video
 		var frame="<iframe width='640' height='385' src='http://www.youtube.com/embed/"+id+"'frameborder='0' allowfullscreen type='text/html'></iframe>";
 		$("#title").html(content);
 		$("#video").html(frame);
-
-		// final="<div id='title'>"+title+"</div><div id='video'>"+frame+"</div>";
+	}
+	else if (response.feed){	//if comments
+		var i = 0;
+		for(i = 0; i < content.length; i += 2){
+			$("#video_info").append("<div id='comment_author'>"+response.feed[i]+"</div><div id='comment_content'>"+response.feed[i+1]+"</div>")
+		}
 	}
 	else{
 		$("#video").html("No Video");
-		// final = "<div id='no'>No Video</div>"
 	}
 }   
 
@@ -32,28 +35,24 @@ var handleData = function(response) {
 }
 
 var handleComments = function(response) {
+	var displayedComments = [];
 	var comments;
 	var individualComment;
 	var commentAuthor;
-	var commentTitle;
 	var commentContent;
 	var i = 0;
 	if(response.feed){
 		comments = response.feed.entry;
 		while(i < 5){
 			individualComment = comments[i];
-			// console.log(comments);
-			// console.log(comments[i]);
 			commentAuthor = individualComment.author[0].name.$t;
 			commentContent = individualComment.content.$t;
-			// commentTitle = individualComment.title.'$t';
-			console.log(individualComment);
-			console.log(commentAuthor);
-			console.log(commentContent);
-			// console.log(commentTitle);
+			displayedComments.push(commentAuthor);
+			displayedComments.push(commentContent);
 			i++;
 		}
 	}
+	fillHTML(videoId, displayedComments, response);
 }
 
 performAJAX = function(url, handleType){
