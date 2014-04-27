@@ -1,14 +1,13 @@
 var videoId = 0;
 var commentAPI;
 
-function fillHTML(id, content, response){
+function handleHTML(id, content, response){
 	if(response.items){	//if title/video
 		var frame="<iframe width='640' height='385' src='http://www.youtube.com/embed/"+id+"'frameborder='0' allowfullscreen type='text/html'></iframe>";
 		$("#title").html(content);
 		$("#video").html(frame);
 	}
 	else if (response.feed){	//if comments
-		console.log(content);
 		$("div[id=comment_bunch").remove();
 		$("div[class=comment_author").remove();
 		$("div[class=comment_content").remove();
@@ -35,7 +34,7 @@ var handleData = function(response) {
 		commentAPI = "http://gdata.youtube.com/feeds/api/videos/"+videoId+"/comments?v=2&alt=json&prettyprint=true";
 		performAJAX(commentAPI, handleComments);
 	}
-	fillHTML(videoId, videoTitle, response);
+	handleHTML(videoId, videoTitle, response);
 }
 
 var handleComments = function(response) {
@@ -56,7 +55,7 @@ var handleComments = function(response) {
 			i++;
 		}
 	}
-	fillHTML(videoId, displayedComments, response);
+	handleHTML(videoId, displayedComments, response);
 }
 
 performAJAX = function(url, handleType){

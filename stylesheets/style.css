@@ -86,14 +86,13 @@ body {
 #title {
   font-size: 30px;
   text-align: left;
-  padding-top: 10px;
-  padding-left: 80px;
+  padding: 10px 80px 10px 80px;
   height: 50px;
   font-family: "Roboto", Trebuchet, sans-serif;
   background-color: #755b73;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 #video {
   position: relative;
   margin: 0 auto;
@@ -103,14 +102,20 @@ body {
   color: #bfb39b;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 #video_info {
   height: 200px;
   width: 800px;
   margin: auto;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
+#comment_bunch {
+  padding: 10px 80px 10px 80px;
+  font-family: "Roboto", Trebuchet, sans-serif;
+}
+
+/* line 59, ../sass/style.scss */
 .search_box {
   font-size: 20px;
   width: 800px;
@@ -123,7 +128,7 @@ body {
   padding: 10px;
 }
 
-/* line 67, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: #493848;
 }
