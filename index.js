@@ -26,7 +26,7 @@ var handleData = function(response) {
 	// console.log(response);
 	var videoTitle = 0;
 	console.log(response.items.length);
-	if(response.items) {
+	if(response.items > 0) {
 		console.log("reponse has items");
 		var videoIndex = 0;
 		while(response.items[videoIndex].id.kind != "youtube#video"){
@@ -37,6 +37,10 @@ var handleData = function(response) {
 		videoTitle=item.snippet.title;
 		commentAPI = "http://gdata.youtube.com/feeds/api/videos/"+videoId+"/comments?v=2&alt=json&prettyprint=true";
 		performAJAX(commentAPI, handleComments);
+	}
+	else{
+		console.log("video id " + videoId);
+		console.log("video title " + videoTitle);
 	}
 	handleHTML(videoId, videoTitle, response);
 }
