@@ -23,8 +23,9 @@ function handleHTML(id, content, response){
 }   
 
 var handleData = function(response) {
-	console.log(response);
+	// console.log(response);
 	var videoTitle = 0;
+	console.log(response.items);
 	if(response.items) {
 		var videoIndex = 0;
 		while(response.items[videoIndex].id.kind != "youtube#video"){
@@ -96,7 +97,7 @@ var getData = function(event){
 
 	// var gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyGiCD-y9ym0Bw4S3a3dTOYzXxr-BPBjE';
 	//Perform AJAX Call.
-	console.log(gAPI);
+	// console.log(gAPI);
 	performAJAX(gAPI, handleData);
 	
 }
