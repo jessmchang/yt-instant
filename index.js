@@ -23,6 +23,7 @@ function handleHTML(id, content, response){
 }   
 
 var handleData = function(response) {
+	console.log(response);
 	var videoTitle = 0;
 	if(response.items) {
 		var videoIndex = 0;
@@ -76,10 +77,10 @@ performAJAX = function(url, handleType){
 
 var getData = function(event){
 	var searchType = event.data.searchType;
-	console.log(event);
-	console.log("Value in search: " + $(".search_box").val());
+	// console.log(event);
+	// console.log("Value in search: " + $(".search_box").val());
 	var keyword = encodeURIComponent($(".search_box").val());
-	console.log("Keyword: " + keyword);
+	// console.log("Keyword: " + keyword);
 	// console.log(keyword);
 	gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyl4ObA4rSynwHIWd3k1Gr5bDRXnkYe1U';
 	if(searchType=="views"){
