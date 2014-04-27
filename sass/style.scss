@@ -11,6 +11,7 @@ $base-color: #493848;
 $accent-color: #BFB39B;
 $light-panel-color: #755b73;
 $dark-panel-color: #30202f;
+$body-text-color: #1B1B1B;
 
 // Fonts
 $font-stack: 'Roboto', Trebuchet, sans-serif;
@@ -29,7 +30,7 @@ body{
 }
 
 #title{
-	font-size: 15px;
+	font-size: 20px;
 	text-align:left;
 	padding: 10px 80px 10px 80px;
 	height: 50px;
@@ -59,6 +60,14 @@ body{
 #comment_bunch{
 	padding: 10px 80px 10px 80px;
 	font-family: $font-stack;
+}
+
+.comment_author{
+	color: $base-color;
+}
+
+.comment_content{
+	color: $body-text-color;
 }
 
 .search_box{
