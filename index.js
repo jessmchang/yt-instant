@@ -39,6 +39,7 @@ var handleData = function(response) {
 		performAJAX(commentAPI, handleComments);
 	}
 	else{
+		videoTitle="No Video Found";
 		//still display id and video, but make title div say "no video found"	
 	}
 	handleHTML(videoId, videoTitle, response);
