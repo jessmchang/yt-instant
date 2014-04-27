@@ -77,6 +77,7 @@ performAJAX = function(url, handleType){
 var getData = function(data){
 	console.log(data);
 	var keyword = encodeURIComponent($(this).val());
+	console.log("Keyword: " + keyword);
 	// console.log(keyword);
 	gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyl4ObA4rSynwHIWd3k1Gr5bDRXnkYe1U';
 	if(data=="#views"){
@@ -103,7 +104,7 @@ $("#ratings").click(getData("#ratings"));
 
 $(document).ready(function() {
 	console.log("ready");
-	getData("#relevance");
+	// getData("#relevance");
 	$(".search_box").keyup(getData("#relevance"));
 
 	
