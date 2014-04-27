@@ -96,14 +96,16 @@ var getData = function(data){
 	
 }
 
+$("#relevance").click(getData("#relevance"));
+$("#views").click(getData("#views"));
+$("#published").click(getData("#published"));
+$("#ratings").click(getData("#ratings"));
+
 $(document).ready(function() {
 	console.log("ready");
 	getData("#relevance");
 	$(".search_box").keyup(getData("#relevance"));
 
-	$("#relevance").click(getData("#relevance"));
-	$("#views").click(getData("#views"));
-	$("#published").click(getData("#published"));
-	$("#ratings").click(getData("#ratings"));
+	
 
 });
