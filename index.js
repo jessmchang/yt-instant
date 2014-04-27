@@ -84,13 +84,13 @@ var getData = function(event){
 	// console.log(keyword);
 	gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyl4ObA4rSynwHIWd3k1Gr5bDRXnkYe1U';
 	if(searchType=="views"){
-		gAPI += "&orderby=viewCount";
+		gAPI += "&order=viewCount";
 	}
 	else if (searchType == "published"){
-		gAPI += "&orderby=published";
+		gAPI += "&order=published";
 	}
 	else if (searchType == "ratings"){
-		gAPI += "&orderby=rating";
+		gAPI += "&order=rating";
 	}
 
 	// var gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyGiCD-y9ym0Bw4S3a3dTOYzXxr-BPBjE';
