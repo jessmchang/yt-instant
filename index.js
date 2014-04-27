@@ -25,7 +25,7 @@ var handleData = function(response) {
 		var item = response.items[videoIndex];
 		videoId = item.id.videoId;
 		videoTitle=item.snippet.title;
-		commentAPI = "http://gdata.youtube.com/feeds/api/videos/"+videoId+"/comments?prettyprint=true";
+		commentAPI = "http://gdata.youtube.com/feeds/api/videos/"+videoId+"/comments?v=2&alt=json&prettyprint=true";
 		performAJAX(commentAPI, handleComments);
 	}
 	fillHTML(videoId, videoTitle, response);
