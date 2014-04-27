@@ -75,6 +75,7 @@ performAJAX = function(url, handleType){
 
 
 var getData = function(data){
+	console.log($(this));
 	console.log("Value in search: " + $(".search_box").val());
 	var keyword = encodeURIComponent($(".search_box").val());
 	console.log("Keyword: " + keyword);
@@ -97,10 +98,10 @@ var getData = function(data){
 	
 }
 
-$("relevance").click(getData("relevance"));
-$("views").click(getData("views"));
-$("published").click(getData("published"));
-$("ratings").click(getData("ratings"));
+$("#relevance").click(getData("relevance"));
+$("#views").click(getData("views"));
+$("#published").click(getData("published"));
+$("#ratings").click(getData("ratings"));
 
 $(document).ready(function() {
 	console.log("ready");
