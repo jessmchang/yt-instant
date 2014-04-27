@@ -75,7 +75,7 @@ performAJAX = function(url, handleType){
 
 
 var getData = function(data){
-	console.log("fetching data");
+	console.log(data);
 	var keyword = encodeURIComponent($(this).val());
 	// console.log(keyword);
 	gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyl4ObA4rSynwHIWd3k1Gr5bDRXnkYe1U';
