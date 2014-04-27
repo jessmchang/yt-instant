@@ -43,6 +43,7 @@ var handleComments = function(response) {
 	var commentContent;
 	var i = 0;
 	if(response.feed){
+		displayedComments = [];
 		comments = response.feed.entry;
 		while(i < 5){
 			individualComment = comments[i];
