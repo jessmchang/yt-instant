@@ -75,7 +75,7 @@ performAJAX = function(url, handleType){
 
 
 var getData = function(event){
-	var searchType = event.data.data;
+	var searchType = event.data.searchType;
 	console.log($(".search_box"));
 	console.log("Value in search: " + $(".search_box").val());
 	var keyword = encodeURIComponent($(".search_box").val());
