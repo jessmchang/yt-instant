@@ -8,6 +8,7 @@ function fillHTML(id, content, response){
 		$("#video").html(frame);
 	}
 	else if (response.feed){	//if comments
+		console.log(content);
 		var i = 0;
 		for(i = 0; i < content.length; i += 2){
 			$("#video_info").append("<div id='comment_author'>"+response.feed[i]+"</div><div id='comment_content'>"+response.feed[i+1]+"</div>")
@@ -52,7 +53,6 @@ var handleComments = function(response) {
 			i++;
 		}
 	}
-	console.log(displayedComments);
 	fillHTML(videoId, displayedComments, response);
 }
 
