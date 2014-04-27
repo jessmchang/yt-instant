@@ -27,6 +27,7 @@ var handleData = function(response) {
 	var videoTitle = 0;
 	console.log(response.items);
 	if(response.items) {
+		console.log("reponse has items");
 		var videoIndex = 0;
 		while(response.items[videoIndex].id.kind != "youtube#video"){
 			videoIndex++;
