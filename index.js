@@ -53,8 +53,9 @@ var handleComments = function(response) {
 	var commentContent;
 	var i = 0;
 	if(response.feed){
-		console.log(comments);
+
 		comments = response.feed.entry;
+		console.log(comments);
 		while(i < 5){
 			individualComment = comments[i];
 			// console.log(comments);
