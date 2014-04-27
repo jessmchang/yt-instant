@@ -80,13 +80,13 @@ var getData = function(data){
 	console.log("Keyword: " + keyword);
 	// console.log(keyword);
 	gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyl4ObA4rSynwHIWd3k1Gr5bDRXnkYe1U';
-	if(data=="#views"){
+	if(data=="views"){
 		gAPI += "&orderby=viewCount";
 	}
-	else if (data == "#published"){
+	else if (data == "published"){
 		gAPI += "&orderby=published";
 	}
-	else if (data == "#ratings"){
+	else if (data == "ratings"){
 		gAPI += "&orderby=rating";
 	}
 
@@ -97,15 +97,15 @@ var getData = function(data){
 	
 }
 
-$("#relevance").click(getData("#relevance"));
-$("#views").click(getData("#views"));
-$("#published").click(getData("#published"));
-$("#ratings").click(getData("#ratings"));
+$("relevance").click(getData("relevance"));
+$("views").click(getData("views"));
+$("published").click(getData("published"));
+$("ratings").click(getData("ratings"));
 
 $(document).ready(function() {
 	console.log("ready");
 	// getData("#relevance");
-	$(".search_box").keyup(getData("#relevance"));
+	$(".search_box").keyup(getData("relevance"));
 
 	
 
