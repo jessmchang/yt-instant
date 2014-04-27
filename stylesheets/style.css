@@ -84,7 +84,7 @@ body {
 
 /* line 31, ../sass/style.scss */
 #title {
-  font-size: 30px;
+  font-size: 15px;
   text-align: left;
   padding: 10px 80px 10px 80px;
   height: 50px;
@@ -129,7 +129,7 @@ body {
   background-color: #bfb39b;
   color: #493848;
   display: block;
-  margin: 5% auto 5% auto;
+  margin: 20px auto auto auto;
   padding: 10px;
 }
 
