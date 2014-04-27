@@ -1,13 +1,20 @@
 /*
-Syntax error: Invalid CSS after "...ht-panel-color ": expected ":", was "#755b73;"
-        on line 11 of /home/jessica/yt-instant/sass/style.scss
+Syntax error: Invalid CSS after "	font-family": expected ";", was ": $font-stack;"
+        on line 36 of /home/jessica/yt-instant/sass/style.scss
 
 Backtrace:
-/home/jessica/yt-instant/sass/style.scss:11
+/home/jessica/yt-instant/sass/style.scss:36
 /usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:1149:in `expected'
 /usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:1085:in `expected'
 /usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:1080:in `tok!'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:512:in `variable'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:586:in `block in declaration_or_ruleset'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:1123:in `call'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:1123:in `rethrow'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:592:in `declaration_or_ruleset'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:554:in `block_child'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:546:in `block_contents'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:535:in `block'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:529:in `ruleset'
 /usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:553:in `block_child'
 /usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:546:in `block_contents'
 /usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:82:in `stylesheet'
@@ -56,4 +63,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...ht-panel-color \": expected \":\", was \"#755b73;\"\A         on line 11 of /home/jessica/yt-instant/sass/style.scss"; }
+  content: "Syntax error: Invalid CSS after \"	font-family\": expected \";\", was \": $font-stack;\"\A         on line 36 of /home/jessica/yt-instant/sass/style.scss"; }
