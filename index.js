@@ -25,7 +25,7 @@ function handleHTML(id, content, response){
 
 var handleData = function(response) {
 	// console.log(response);
-	console.log(response.items);
+	console.log(response);
 	if(response.items.length > 0) {
 		console.log("reponse has items");
 		var videoIndex = 0;
