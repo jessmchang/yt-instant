@@ -74,20 +74,21 @@ performAJAX = function(url, handleType){
 }
 
 
-var getData = function(){
+var getData = function(event){
+	var searchType = event.data.data;
 	console.log($(".search_box"));
 	console.log("Value in search: " + $(".search_box").val());
 	var keyword = encodeURIComponent($(".search_box").val());
 	console.log("Keyword: " + keyword);
 	// console.log(keyword);
 	gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyl4ObA4rSynwHIWd3k1Gr5bDRXnkYe1U';
-	if(data=="views"){
+	if(searchType=="views"){
 		gAPI += "&orderby=viewCount";
 	}
-	else if (data == "published"){
+	else if (searchType == "published"){
 		gAPI += "&orderby=published";
 	}
-	else if (data == "ratings"){
+	else if (searchType == "ratings"){
 		gAPI += "&orderby=rating";
 	}
 
@@ -101,7 +102,10 @@ var getData = function(){
 $(document).ready(function() {
 	console.log("ready");
 	// getData("#relevance");
-	$(".search_box").keyup(getData);
+	$(".search_box").bind('keyup', {searchType: "relevance"}, getData);
+	$(".search_box").keyup(function(){
+		getData.call(this, "relevance");
+	});
 
 	
 
