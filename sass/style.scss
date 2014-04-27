@@ -6,6 +6,7 @@
 @import "compass/reset";
 
 // Colors
+$reset-color: #FFF;
 $base-color: #493848;
 $accent-color: #BFB39B;
 $light-panel-color: #755b73;
@@ -49,6 +50,10 @@ body{
 	height: 200px;
 	width: 800px;
 	margin: auto;
+}
+
+#comment_area{
+	background-color: $reset-color;
 }
 
 #comment_bunch{
