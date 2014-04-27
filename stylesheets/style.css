@@ -106,9 +106,10 @@ body {
   color: #493848;
   display: block;
   margin: 5% auto 5% auto;
+  padding: 3px;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: #493848;
 }
