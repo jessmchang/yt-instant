@@ -103,6 +103,11 @@ $(document).ready(function() {
 	console.log("ready");
 	// getData("#relevance");
 	$(".search_box").bind('keyup', {searchType: "relevance"}, getData);
+
+
+	$("#views").bind('click', {searchType: "views"}, getData);
+	$("#published").bind('click', {searchType: "published"}, getData);
+	$("#ratings").bind('click', {searchType: "ratings"}, getData);
 	// $(".search_box").keyup(getData);
 	// });
 
