@@ -1,73 +1,128 @@
-/*
-Syntax error: Invalid CSS after "	padding-tp[": expected "|", was ":10px;"
-        on line 32 of /home/jessica/yt-instant/sass/style.scss
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-Backtrace:
-/home/jessica/yt-instant/sass/style.scss:32
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:1149:in `expected'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:1085:in `expected'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:1080:in `tok!'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:785:in `attrib_name!'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:753:in `attrib'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:677:in `simple_selector_sequence'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:640:in `_selector'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:619:in `selector'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:603:in `selector_sequence'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:528:in `ruleset'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:591:in `block in declaration_or_ruleset'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:1123:in `call'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:1123:in `rethrow'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:592:in `declaration_or_ruleset'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:554:in `block_child'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:546:in `block_contents'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:535:in `block'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:529:in `ruleset'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:553:in `block_child'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:546:in `block_contents'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:82:in `stylesheet'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/scss/parser.rb:27:in `parse'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/engine.rb:342:in `_to_tree'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:126:in `timed'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:139:in `block in compile'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/logger.rb:45:in `red'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:138:in `compile'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:118:in `compile_if_required'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:101:in `each'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:101:in `block in run'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:126:in `timed'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/compiler.rb:100:in `run'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/commands/watch_project.rb:147:in `recompile'
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-/usr/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/commands/watch_project.rb:87:in `perform'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/commands/base.rb:18:in `execute'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/commands/project_base.rb:19:in `execute'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/bin/compass:30:in `block in <top (required)>'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/bin/compass:44:in `call'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/bin/compass:44:in `<top (required)>'
-/usr/local/bin/compass:19:in `load'
-/usr/local/bin/compass:19:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"	padding-tp[\": expected \"|\", was \":10px;\"\A         on line 32 of /home/jessica/yt-instant/sass/style.scss"; }
+/* line 22, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 16, ../sass/style.scss */
+body {
+  font-family: 100% "Roboto", Trebuchet, sans-serif;
+  background-color: #493848;
+  color: #bfb39b;
+}
+
+/* line 22, ../sass/style.scss */
+#container {
+  background-color: #30202f;
+  min-height: 400px;
+  width: 800px;
+  margin: 20px auto 0px auto;
+}
+
+/* line 29, ../sass/style.scss */
+#title {
+  font-size: 30px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 80px;
+  font-family: "Roboto", Trebuchet, sans-serif;
+}
+
+/* line 37, ../sass/style.scss */
+#video {
+  position: relative;
+  margin: 0 auto;
+  padding: 50px;
+  width: 640px;
+  height: 400px;
+  color: #bfb39b;
+}
+
+/* line 46, ../sass/style.scss */
+#video_info {
+  height: 200px;
+  background-color: white;
+  width: 800px;
+  margin: auto;
+}
+
+/* line 53, ../sass/style.scss */
+.search_box {
+  font-size: 20px;
+  width: 800px;
+  border: 0px;
+  font-family: "Roboto", Trebuchet, sans-serif;
+  background-color: #bfb39b;
+  color: #493848;
+  display: block;
+  margin: 5% auto 5% auto;
+  padding: 10px;
+}
+
+/* line 65, ../sass/style.scss */
+::-webkit-input-placeholder {
+  color: #493848;
+}
