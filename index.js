@@ -1,5 +1,6 @@
 var videoId = 0;
 var commentAPI;
+var gAPI;
 
 function handleHTML(id, content, response){
 	if(response.items){	//if title/video
@@ -73,11 +74,21 @@ performAJAX = function(url, handleType){
 }
 
 
-var getData = function(){
+var getData = function(data){
 	console.log("fetching data");
 	var keyword = encodeURIComponent($(this).val());
 	// console.log(keyword);
-	var gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyl4ObA4rSynwHIWd3k1Gr5bDRXnkYe1U';
+	gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyl4ObA4rSynwHIWd3k1Gr5bDRXnkYe1U';
+	if(data=="#views"){
+		gAPI += "&orderby=viewCount";
+	}
+	else if (data == "#published"){
+		gAPI += "&orderby=published";
+	}
+	else if (data == "#ratings"){
+		gAPI += "&orderby=rating";
+	}
+	
 	// var gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyGiCD-y9ym0Bw4S3a3dTOYzXxr-BPBjE';
 	//Perform AJAX Call.
 	performAJAX(gAPI, handleData);
@@ -86,6 +97,12 @@ var getData = function(){
 
 $(document).ready(function() {
 	console.log("ready");
-	getData();
-	$(".search_box").keyup(getData);
+	getData("#relevance");
+	$(".search_box").keyup(getData("#relevance"));
+
+	$("#relevance").click(getData("#relevance"));
+	$("#views").click(getData("#views"));
+	$("#published").click(getData("#published"));
+	$("#ratings").click(getData("#ratings"));
+
 });
