@@ -106,9 +106,10 @@ body {
   height: 200px;
   background-color: white;
   width: 800px;
+  margin: auto;
 }
 
-/* line 52, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .search_box {
   font-size: 20px;
   width: 800px;
@@ -121,7 +122,7 @@ body {
   padding: 10px;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: #493848;
 }
