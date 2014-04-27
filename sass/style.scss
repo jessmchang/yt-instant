@@ -8,6 +8,7 @@
 // Colors
 $base-color: #493848;
 $accent-color: #BFB39B;
+$darker-color: #30202f;
 
 // Fonts
 $font-stack: 'Roboto', Trebuchet, sans-serif;
@@ -19,7 +20,7 @@ body{
 }
 
 #container{
-	background-color:#000;
+	background-color: $darker-color;
 	min-height:400px;
 	width:800px;
 	margin: 20px auto 100px auto;
