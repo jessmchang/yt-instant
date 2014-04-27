@@ -34,6 +34,7 @@ body{
 	padding-left: 80px;
 	height: 50px;
 	font-family: $font-stack;
+	background-color: $light-panel-color;
 }
 
 #video{
@@ -47,7 +48,6 @@ body{
 
 #video_info{
 	height: 200px;
-	background-color: $light-panel-color;
 	width: 800px;
 	margin: auto;
 }
