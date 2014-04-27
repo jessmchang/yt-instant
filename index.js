@@ -53,18 +53,23 @@ var handleComments = function(response) {
 	var commentContent;
 	var i = 0;
 	if(response.feed){
-
 		comments = response.feed.entry;
-		console.log(comments);
-		while(i < 5){
-			individualComment = comments[i];
-			// console.log(comments);
-			commentAuthor = individualComment.author[0].name.$t;
-			commentContent = individualComment.content.$t;
-			displayedComments.push(commentAuthor);
-			displayedComments.push(commentContent);
-			i++;
+		if(comments){
+			console.log(comments);
+			while(i < 5){
+				individualComment = comments[i];
+				// console.log(comments);
+				commentAuthor = individualComment.author[0].name.$t;
+				commentContent = individualComment.content.$t;
+				displayedComments.push(commentAuthor);
+				displayedComments.push(commentContent);
+				i++;
+			}
 		}
+		else{	//if no comments
+			console.log("no comments");
+		}
+		
 	}
 	handleHTML(videoId, displayedComments, response);
 }
