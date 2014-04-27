@@ -103,9 +103,8 @@ $(document).ready(function() {
 	console.log("ready");
 	// getData("#relevance");
 	$(".search_box").bind('keyup', {searchType: "relevance"}, getData);
-	$(".search_box").keyup(function(){
-		getData.call(this, "relevance");
-	});
+	// $(".search_box").keyup(getData);
+	// });
 
 	
 
