@@ -1,10 +1,10 @@
 var videoId = 0;
 var commentAPI;
 
-function fillHTML(id, title, response){
+function fillHTML(id, content, response){
 	if(response.items){
 		var frame="<iframe width='640' height='385' src='http://www.youtube.com/embed/"+id+"'frameborder='0' allowfullscreen type='text/html'></iframe>";
-		$("#title").html(title);
+		$("#title").html(content);
 		$("#video").html(frame);
 
 		// final="<div id='title'>"+title+"</div><div id='video'>"+frame+"</div>";
@@ -32,7 +32,23 @@ var handleData = function(response) {
 }
 
 var handleComments = function(response) {
-	console.log(response.feed.entry);
+	var comments;
+	var individualComment;
+	var commentAuthor;
+	var commentTitle;
+	var commentContent;
+	var i = 0;
+	if(reponse.feed){
+		comments = response.feed.entry;
+		while(i < 5){
+			individualComment = comments.i;
+			commentAuthor = individualComment.author.i.name;
+			commentContent = individualComment.content;
+			commentTitle = individualComment.title;
+			console.log(individualComment + " " + commentAuthor + " " + commentContent + " " + commentTitle);
+			i++;
+		}
+	}
 }
 
 performAJAX = function(url, handleType){
