@@ -8,7 +8,8 @@
 // Colors
 $base-color: #493848;
 $accent-color: #BFB39B;
-$darker-color: #30202f;
+$light-panel-color #755b73;
+$dark-panel-color: #30202f;
 
 // Fonts
 $font-stack: 'Roboto', Trebuchet, sans-serif;
@@ -20,7 +21,7 @@ body{
 }
 
 #container{
-	background-color: $darker-color;
+	background-color: $dark-panel-color;
 	min-height:400px;
 	width:800px;
 	margin: 20px auto 0px auto;
@@ -31,6 +32,7 @@ body{
 	text-align:left;
 	padding-top:10px;
 	padding-left: 80px;
+	height: 50px
 	font-family: $font-stack;
 }
 
@@ -45,7 +47,7 @@ body{
 
 #video_info{
 	height: 200px;
-	background-color: white;
+	background-color: $light-panel-color;
 	width: 800px;
 	margin: auto;
 }
