@@ -83,6 +83,7 @@ var getData = function(event){
 	// console.log("Keyword: " + keyword);
 	// console.log(keyword);
 	gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyl4ObA4rSynwHIWd3k1Gr5bDRXnkYe1U';
+	
 	if(searchType=="views"){
 		gAPI += "&order=viewCount";
 	}
@@ -106,6 +107,7 @@ $(document).ready(function() {
 	$(".search_box").bind('keyup', {searchType: "relevance"}, getData);
 
 
+	$("#relevance").bind('click', {searchType: "relevance"}, getData);
 	$("#views").bind('click', {searchType: "views"}, getData);
 	$("#published").bind('click', {searchType: "published"}, getData);
 	$("#ratings").bind('click', {searchType: "ratings"}, getData);
