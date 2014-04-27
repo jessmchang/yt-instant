@@ -44,13 +44,13 @@ var handleComments = function(response) {
 			individualComment = comments[i];
 			// console.log(comments);
 			// console.log(comments[i]);
-			commentAuthor = individualComment.author[0].name.'$t';
-			commentContent = individualComment.content.'$t';
-			commentTitle = individualComment.title.'$t';
+			commentAuthor = individualComment.author[0].name.$t;
+			commentContent = individualComment.content.$t;
+			// commentTitle = individualComment.title.'$t';
 			console.log(individualComment);
 			console.log(commentAuthor);
 			console.log(commentContent);
-			console.log(commentTitle);
+			// console.log(commentTitle);
 			i++;
 		}
 	}
