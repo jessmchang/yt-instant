@@ -21,7 +21,7 @@ body{
 #container{
 	background-color:#000;
 	min-height:400px;
-	width:640px;
+	width:800px;
 	margin: 20px auto 100px auto;
 }
 
@@ -34,6 +34,7 @@ body{
 }
 
 #video{
+	height: 450px;
 	color: $accent-color;
 }
 
