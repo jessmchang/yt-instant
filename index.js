@@ -3,6 +3,7 @@ function fillHTML(id, title, response){
 		var frame="<iframe width='640' height='385' src='http://www.youtube.com/embed/"+id+"'frameborder='0' allowfullscreen type='text/html'></iframe>";
 		$("#title").html(title);
 		$("#video").html(frame);
+		
 		// final="<div id='title'>"+title+"</div><div id='video'>"+frame+"</div>";
 	}
 	else{
