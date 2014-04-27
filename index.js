@@ -9,7 +9,7 @@ function fillHTML(id, title, response){
 		$("#video").html("No Video");
 		// final = "<div id='no'>No Video</div>"
 	}
-}
+}   
 
 var handleData = function(response) {
 	var videoId = 0;
@@ -31,7 +31,8 @@ var getData = function(){
 	console.log("fetching data");
 	var keyword = encodeURIComponent($(this).val());
 	console.log(keyword);
-	var gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyl4ObA4rSynwHIWd3k1Gr5bDRXnkYe1U';	
+	var gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyl4ObA4rSynwHIWd3k1Gr5bDRXnkYe1U';
+	// var gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyGiCD-y9ym0Bw4S3a3dTOYzXxr-BPBjE';	
 	var xhr;
 	if(xhr && xhr.readyState != 4){
         xhr.abort();
