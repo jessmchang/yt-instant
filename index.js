@@ -20,9 +20,9 @@ function handleHTML(id, content, response){
 	}
 	//If comments exist in the response
 	else if (response.feed){
-		$("div[id=comment_bunch").remove();
-		$("div[class=comment_author").remove();
-		$("div[class=comment_content").remove();
+		$("div[id=comment_bunch]").remove();
+		$("div[class=comment_author]").remove();
+		$("div[class=comment_content]").remove();
 		for(var i = 0; i < content.length; i += 2){
 			$("#comment_area").append("<div id='comment_bunch'><div class='comment_author'>"+content[i]+"</div><div class='comment_content'>"+content[i+1]+"</div></div>");
 		}
