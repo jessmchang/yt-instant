@@ -74,7 +74,19 @@ body {
   color: #bfb39b;
 }
 
-/* line 26, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
+.btn {
+  border: none;
+  font-family: "Roboto", Trebuchet, sans-serif;
+  text-transform: uppercase;
+  outline: none;
+  width: 100px;
+  height: 100px;
+  background-color: #bfb39b;
+  text-decoration: none;
+}
+
+/* line 37, ../sass/style.scss */
 #container {
   background-color: #30202f;
   min-height: 400px;
@@ -82,7 +94,7 @@ body {
   margin: 20px auto 0px auto;
 }
 
-/* line 33, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 #title {
   font-size: 20px;
   text-align: left;
@@ -90,7 +102,7 @@ body {
   font-family: "Roboto", Trebuchet, sans-serif;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 #video {
   position: relative;
   margin: 0 auto;
@@ -100,36 +112,36 @@ body {
   color: #bfb39b;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 #video_info {
   height: 200px;
   width: 800px;
   margin: auto;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 #comment_area {
   background-color: white;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 #comment_bunch {
   padding: 10px 80px 10px 80px;
   font-family: "Roboto", Trebuchet, sans-serif;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .comment_author {
   color: #bfb39b;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .comment_content {
   color: #1b1b1b;
   font-size: 10px;
 }
 
-/* line 73, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .search_box {
   font-size: 20px;
   width: 800px;
@@ -142,7 +154,7 @@ body {
   padding: 10px;
 }
 
-/* line 85, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: #493848;
 }

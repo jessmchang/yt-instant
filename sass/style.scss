@@ -22,6 +22,17 @@ body{
 	color: $accent-color;
 }
 
+.btn {
+	border: none;
+	font-family: $font-stack;
+	text-transform: uppercase;
+	outline: none;
+	width: 100px;
+	height: 100px;
+	background-color: $accent-color;
+	text-decoration: none;
+}
+
 
 #container{
 	background-color: $dark-panel-color;
