@@ -1,7 +1,7 @@
 yt-instant
 ==========
 
-A lite version of Youtube with an instant search.
+A lite version of Youtube with an instant search. yt-instant.herokuapp.com
 
 Features
 ---------
