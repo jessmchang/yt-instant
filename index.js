@@ -3,6 +3,7 @@ var videoId = 0;
 var videoTitle = 0;
 var commentAPI;
 var gAPI;
+var xhr;
 
 /*
 * handleHTML handles all HTML interactions.
@@ -108,7 +109,6 @@ var handleComments = function(response) {
 * @param handleType: what needs to be handled (comments or video id/title)
 */
 performAJAX = function(url, handleType){
-	var xhr;
 	//If there's an ongoing request before sending a new one, kill it.
 	if(xhr && xhr.readyState != 4){
 		xhr.abort();
@@ -152,7 +152,7 @@ var getData = function(event){
 $(document).ready(function() {
 	console.log("ready");
 	//When user strikes a key, call getData function
-	$(".search_box").bind('keyup', {searchType: "relevance"}, getData);
+	$(".search_box").bind('input', {searchType: "relevance"}, getData);
 	//Button onclicks.
 	$("#relevance").bind('click', {searchType: "relevance"}, getData);
 	$("#views").bind('click', {searchType: "views"}, getData);
