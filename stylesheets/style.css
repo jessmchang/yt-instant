@@ -134,7 +134,7 @@ footer {
   padding: 30px 80px 30px 80px;
   font-family: "Roboto", Helvetica, Trebuchet, sans-serif;
   color: #30202f;
-  background-color: #F9F8F3;
+  background-color: #bfb39b;
 }
 
 /* line 81, ../sass/style.scss */
@@ -145,7 +145,7 @@ footer {
 
 /* line 86, ../sass/style.scss */
 .comment_author {
-  color: #bfb39b;
+  color: #F9F8F3;
 }
 
 /* line 90, ../sass/style.scss */

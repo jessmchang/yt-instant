@@ -75,7 +75,7 @@ footer{
 	padding: 30px 80px 30px 80px;
 	font-family: $font-stack;
 	color: $dark-panel-color;
-	background-color: #F9F8F3;
+	background-color: $accent-color;
 }
 
 #comment_bunch{
@@ -84,7 +84,7 @@ footer{
 }
 
 .comment_author{
-	color: $accent-color;
+	color: #F9F8F3;
 }
 
 .comment_content{
