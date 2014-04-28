@@ -146,9 +146,10 @@ footer {
 /* line 86, ../sass/style.scss */
 .comment_author {
   color: #493848;
+  font-size: 20px;
 }
 
-/* line 90, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 .comment_content {
   font-family: "Droid Sans", Georgia, serif;
   color: #1b1b1b;
@@ -157,7 +158,7 @@ footer {
   line-height: 20px;
 }
 
-/* line 98, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .search_box {
   font-size: 20px;
   width: 800px;
@@ -170,7 +171,7 @@ footer {
   padding: 10px;
 }
 
-/* line 110, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: #493848;
 }
