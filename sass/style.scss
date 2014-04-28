@@ -84,6 +84,12 @@ body{
 	text-decoration: none;
 }
 
+.btn:hover{
+	cursor: pointer;
+	background-color: $light-panel-color;
+	color: $accent-color;
+}
+
 .comment_author{
 	color: $base-color;
 }

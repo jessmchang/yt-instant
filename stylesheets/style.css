@@ -147,11 +147,18 @@ body {
 }
 
 /* line 87, ../sass/style.scss */
+.btn:hover {
+  cursor: pointer;
+  background-color: #755b73;
+  color: #bfb39b;
+}
+
+/* line 93, ../sass/style.scss */
 .comment_author {
   color: #493848;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 .comment_content {
   font-family: "Droid Sans", Georgia, serif;
   color: #1b1b1b;
@@ -160,7 +167,7 @@ body {
   line-height: 20px;
 }
 
-/* line 99, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: #493848;
 }
