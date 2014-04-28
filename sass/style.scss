@@ -72,6 +72,7 @@ footer{
 }
 
 #comment_area{
+	font-size: 20px;
 	padding: 30px 80px 30px 80px;
 	font-family: $font-stack;
 	color: $dark-panel-color;
@@ -85,7 +86,6 @@ footer{
 
 .comment_author{
 	color: $base-color;
-	font-size: 20px;
 }
 
 .comment_content{
