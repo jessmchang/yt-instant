@@ -75,7 +75,7 @@ var handleComments = function(response) {
 		}
 		
 	}
-	console.log(displayedComments);
+	// console.log(displayedComments);
 	handleHTML(videoId, displayedComments, response);
 }
 
@@ -96,7 +96,7 @@ performAJAX = function(url, handleType){
 
 var getData = function(event){
 	var searchType = event.data.searchType;
-	console.log(searchType);
+	// console.log(searchType);
 	var keyword = encodeURIComponent($(".search_box").val());
 	// console.log("Keyword: " + keyword);
 	// console.log(keyword);
