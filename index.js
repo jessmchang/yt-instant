@@ -57,7 +57,7 @@ var handleComments = function(response) {
 		if(comments){
 			console.log(comments);
 			while(i < 5){
-				if(comments.length == i+1){
+				if(comments.length == i){
 					break;
 				}
 				individualComment = comments[i];
