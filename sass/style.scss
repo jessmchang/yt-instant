@@ -27,10 +27,14 @@ body{
 	font-family: $font-stack;
 	text-transform: uppercase;
 	outline: none;
-	width: 100px;
+	width: 155px;
 	height: 100px;
 	background-color: $accent-color;
 	text-decoration: none;
+}
+
+#button-bunch{
+	margin-left: 80px;
 }
 
 
