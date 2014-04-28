@@ -23,8 +23,7 @@ function handleHTML(id, content, response){
 		$("div[id=comment_bunch").remove();
 		$("div[class=comment_author").remove();
 		$("div[class=comment_content").remove();
-		var i = 0;
-		for(i = 0; i < content.length; i += 2){
+		for(var i = 0; i < content.length; i += 2){
 			$("#comment_area").append("<div id='comment_bunch'><div class='comment_author'>"+content[i]+"</div><div class='comment_content'>"+content[i+1]+"</div></div>");
 		}
 	}
@@ -64,7 +63,7 @@ var handleData = function(response) {
 }
 
 /*
-* handleComments deal with comments.
+* handleComments deals with comments.
 * In this case, it gets up to 5 comments from the API and their authors.
 * handleHTML is called to display those comments.
 */
