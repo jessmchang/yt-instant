@@ -111,7 +111,7 @@ body {
 #video {
   position: relative;
   margin: 0 auto;
-  padding: 50px;
+  padding: 20px 50px 50px 50px;
   width: 640px;
   height: 400px;
   color: #bfb39b;
