@@ -74,13 +74,12 @@ var handleComments = function(response) {
 	var individualComment;
 	var commentAuthor;
 	var commentContent;
-	var i = 0;
 	if(response.feed){
 		comments = response.feed.entry;
 		//If there are comments
 		if(comments){
 			//Displaying up to 5 comments.
-			while(i < 5){
+			for(var i = 0; i < 5; i++){
 				if(comments.length == i){
 					break;
 				}
@@ -91,7 +90,6 @@ var handleComments = function(response) {
 				//Every even element is the comment author, every odd element is the comment content.
 				displayedComments.push(commentAuthor);
 				displayedComments.push(commentContent);
-				i++;
 			}
 		}
 		//If there aren't any comments
@@ -151,7 +149,7 @@ var getData = function(event){
 */
 $(document).ready(function() {
 	console.log("ready");
-	//When user strikes a key, call getData function
+	//Call getData function for input captured.
 	$(".search_box").bind('input', {searchType: "relevance"}, getData);
 	//Button onclicks.
 	$("#relevance").bind('click', {searchType: "relevance"}, getData);
