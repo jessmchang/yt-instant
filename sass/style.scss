@@ -14,6 +14,7 @@ $comment-font-stack: 'Droid Sans', Georgia, serif;
 body{
 	font-family: 100% $font-stack;
 	background-image: url('../images/stardust.png');
+	background-color: $base-color;
 	color: $accent-color;
 }
 

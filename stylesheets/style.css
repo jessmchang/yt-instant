@@ -67,15 +67,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   font-family: 100% "Roboto", Helvetica, Trebuchet, sans-serif;
   background-image: url("../images/stardust.png");
+  background-color: #493848;
   color: #bfb39b;
 }
 
-/* line 20, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 #button-bunch {
   margin-left: 80px;
 }
 
-/* line 24, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 #title {
   font-size: 20px;
   text-align: left;
@@ -84,20 +85,20 @@ body {
   font-weight: 700px;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 #container {
   background-color: #30202f;
   width: 800px;
   margin: 20px auto 0px auto;
 }
 
-/* line 38, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 #video_info {
   width: 800px;
   margin: auto auto 100px auto;
 }
 
-/* line 43, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 #video {
   position: relative;
   margin: 0 auto;
@@ -106,7 +107,7 @@ body {
   color: #bfb39b;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 #comment_area {
   font-size: 20px;
   padding: 30px 80px 30px 80px;
@@ -115,13 +116,13 @@ body {
   background-color: #bfb39b;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 #comment_bunch {
   padding: 15px 0px 15px 0px;
   font-family: "Roboto", Helvetica, Trebuchet, sans-serif;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 .search_box {
   font-size: 20px;
   width: 800px;
@@ -134,7 +135,7 @@ body {
   padding: 10px;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .btn {
   border: none;
   font-family: "Roboto", Helvetica, Trebuchet, sans-serif;
@@ -146,19 +147,19 @@ body {
   text-decoration: none;
 }
 
-/* line 87, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 .btn:hover {
   cursor: pointer;
   background-color: #755b73;
   color: #bfb39b;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .comment_author {
   color: #493848;
 }
 
-/* line 97, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .comment_content {
   font-family: "Droid Sans", Georgia, serif;
   color: #1b1b1b;
@@ -167,7 +168,7 @@ body {
   line-height: 20px;
 }
 
-/* line 105, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: #493848;
 }
