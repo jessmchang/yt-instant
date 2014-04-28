@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 19, ../sass/style.scss */
 body {
-  font-family: 100% "Roboto", Trebuchet, sans-serif;
+  font-family: 100% "Roboto", Helvetica, Trebuchet, sans-serif;
   background-color: #493848;
   color: #bfb39b;
 }
@@ -77,14 +77,14 @@ body {
 /* line 25, ../sass/style.scss */
 footer {
   background-color: #755b73;
-  font-family: "Roboto", Trebuchet, sans-serif;
+  font-family: "Roboto", Helvetica, Trebuchet, sans-serif;
   text-align: center;
 }
 
 /* line 31, ../sass/style.scss */
 .btn {
   border: none;
-  font-family: "Roboto", Trebuchet, sans-serif;
+  font-family: "Roboto", Helvetica, Trebuchet, sans-serif;
   text-transform: uppercase;
   outline: none;
   width: 155px;
@@ -110,7 +110,7 @@ footer {
   font-size: 20px;
   text-align: left;
   padding: 30px 80px 30px 80px;
-  font-family: "Roboto", Trebuchet, sans-serif;
+  font-family: "Roboto", Helvetica, Trebuchet, sans-serif;
   font-weight: 700px;
 }
 
@@ -132,15 +132,15 @@ footer {
 /* line 74, ../sass/style.scss */
 #comment_area {
   padding: 30px 80px 30px 80px;
-  font-family: "Roboto", Trebuchet, sans-serif;
+  font-family: "Roboto", Helvetica, Trebuchet, sans-serif;
   color: #30202f;
-  background-color: white;
+  background-color: #F9F8F3;
 }
 
 /* line 81, ../sass/style.scss */
 #comment_bunch {
   padding: 15px 0px 15px 0px;
-  font-family: "Roboto", Trebuchet, sans-serif;
+  font-family: "Roboto", Helvetica, Trebuchet, sans-serif;
 }
 
 /* line 86, ../sass/style.scss */
@@ -150,17 +150,18 @@ footer {
 
 /* line 90, ../sass/style.scss */
 .comment_content {
+  font-family: "Droid Sans", Georgia, serif;
   color: #1b1b1b;
   padding-top: 7px;
   font-size: 14px;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 .search_box {
   font-size: 20px;
   width: 800px;
   border: 0px;
-  font-family: "Roboto", Trebuchet, sans-serif;
+  font-family: "Roboto", Helvetica, Trebuchet, sans-serif;
   background-color: #bfb39b;
   color: #493848;
   display: block;
@@ -168,7 +169,7 @@ footer {
   padding: 10px;
 }
 
-/* line 108, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 ::-webkit-input-placeholder {
   color: #493848;
 }

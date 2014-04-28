@@ -6,7 +6,6 @@
 @import "compass/reset";
 
 // Colors
-$reset-color: #FFF;
 $base-color: #493848;
 $accent-color: #BFB39B;
 $light-panel-color: #755b73;
@@ -14,7 +13,8 @@ $dark-panel-color: #30202f;
 $body-text-color: #1B1B1B;
 
 // Fonts
-$font-stack: 'Roboto', Trebuchet, sans-serif;
+$font-stack: 'Roboto', Helvetica, Trebuchet, sans-serif;
+$comment-font-stack: 'Droid Sans', Georgia, serif;
 
 body{
 	font-family: 100% $font-stack;
@@ -75,7 +75,7 @@ footer{
 	padding: 30px 80px 30px 80px;
 	font-family: $font-stack;
 	color: $dark-panel-color;
-	background-color: $reset-color;
+	background-color: #F9F8F3;
 }
 
 #comment_bunch{
@@ -88,6 +88,7 @@ footer{
 }
 
 .comment_content{
+	font-family: $comment-font-stack;
 	color: $body-text-color;
 	padding-top: 7px;
 	font-size: 14px;
