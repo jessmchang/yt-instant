@@ -1,0 +1,37 @@
+1) How could a search feature integrate with our existing product?  
+	One interesting feature that could be implemented is an "Explore" feed for personalized Tints,
+	where, for a specific duration of time, the default feed would switch over to this
+	"Explore" feed. There would be a search field on the default feed, and the most searched-for items
+	would be displayed on this new Explore feed. This could gain a lot of user interaction, 
+	especially since the user is viewing the most popular Twitter/Facebook/Instagram/etc posts.
+
+2) What questions would you want to ask customers in order to improve this feature?
+	I would probably perform some A/B testing and ask customers a few specific questions:
+
+	1) Why do you think we implemented our new Explore feature?
+	2) What are the first three things you noticed while browsing through the Explore feature?
+	3) Were you able to use the search feature without a problem?
+	4) What do you think about the duration of the Explore feature being displayed? How long
+		should it be displayed? Should it be displayed at all?
+
+	These questions are not too specific and not too vague. I wouldn't want to seem like
+	I'm forcing a customer to ask any type of question. For future questions, I would try to
+	keep user experience in mind. #2 is a good example of a user-experience-oriented question,
+	as it allows the customer to trace back to his/her first impressions of the product.
+
+3) Notes on any issues you ran into and how you worked around them.
+	The most difficult part of the project was figuring out how to get data from the Youtube API 
+	(I hadn't worked with any APIs before). I read the Youtube documentation thoroughly, and figured 
+	that I just had to make calls to the API using a given URL, and parse the resulting JSON data, to 
+	get specific information. Though I did run into a ton of issues with AJAX calls and trying to 
+	figure out how exactly AJAX calls work, what a GET request is, etc. And now I know (after a good 
+	amount of Google searches).
+
+	One annoying bug I had was that, nothing would happen if I searched something random, like "Nicef49uefndfj983375".
+	And because nothing had happened, I couldn't tell why the comments weren't getting updated. Specifically, 
+	if I searched "Nicef49uefndfj983375", I would get a some video when there were search results, probably 
+	a video relating to the first few characters of the search input ("Nice") with the correct comments for
+	that video. But when I deleted that search input and searched up something that /would/ trigger results,
+	the comments would not get updated. To solve this issue, I logged some statements. Many statements.
+	The first thing I did was fix the issue of not having any search results. And then I figured that all I 
+	had to do for the comments issue was include "if(comments){}" around the original operation.
