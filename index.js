@@ -97,7 +97,6 @@ var handleComments = function(response) {
 		else{
 			console.log("no comments");
 		}
-		
 	}
 	//Handles HTML
 	handleHTML(videoId, displayedComments, response);
@@ -112,16 +111,16 @@ performAJAX = function(url, handleType){
 	var xhr;
 	//If there's an ongoing request before sending a new one, kill it.
 	if(xhr && xhr.readyState != 4){
-        xhr.abort();
-    }
+		xhr.abort();
+	}
     //The ajax call.
-	xhr = $.ajax
-	({
-		type: "GET",
-		url: url,
-		dataType:"jsonp",
-		success: handleType
-	});
+    xhr = $.ajax
+    ({
+    	type: "GET",
+    	url: url,
+    	dataType:"jsonp",
+    	success: handleType
+    });
 }
 
 /*
@@ -133,7 +132,6 @@ var getData = function(event){
 	var searchType = event.data.searchType;
 	var keyword = encodeURIComponent($(".search_box").val());
 	gAPI='https://www.googleapis.com/youtube/v3/search?part=snippet&q='+keyword+'&key=AIzaSyCyl4ObA4rSynwHIWd3k1Gr5bDRXnkYe1U';
-	
 	//searchType determines the type of video to be displayed
 	//most relevant video, highest view count, published most recently, or highest rated video
 	if(searchType=="views"){
@@ -146,7 +144,6 @@ var getData = function(event){
 		gAPI += "&order=rating";
 	}
 	performAJAX(gAPI, handleData);
-	
 }
 
 /*
@@ -156,13 +153,9 @@ $(document).ready(function() {
 	console.log("ready");
 	//When user strikes a key, call getData function
 	$(".search_box").bind('keyup', {searchType: "relevance"}, getData);
-
 	//Button onclicks.
 	$("#relevance").bind('click', {searchType: "relevance"}, getData);
 	$("#views").bind('click', {searchType: "views"}, getData);
 	$("#published").bind('click', {searchType: "published"}, getData);
 	$("#ratings").bind('click', {searchType: "ratings"}, getData);
-
-	
-
 });
