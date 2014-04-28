@@ -57,6 +57,9 @@ var handleComments = function(response) {
 		if(comments){
 			console.log(comments);
 			while(i < 5){
+				if(comments.length == i+1){
+					break;
+				}
 				individualComment = comments[i];
 				console.log(individualComment);
 				commentAuthor = individualComment.author[0].name.$t;
