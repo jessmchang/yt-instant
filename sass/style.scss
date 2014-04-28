@@ -22,6 +22,12 @@ body{
 	color: $accent-color;
 }
 
+footer{
+	background-color: $light-panel-color;
+	font-family: $font-stack;
+	text-align: center;
+}
+
 .btn {
 	border: none;
 	font-family: $font-stack;
@@ -61,7 +67,6 @@ body{
 }
 
 #video_info{
-	height: 200px;
 	width: 800px;
 	margin: auto;
 }
