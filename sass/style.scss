@@ -2,9 +2,9 @@
 
 // Colors
 $base-color: #493848;
-$accent-color: #BFB39B;
-$light-panel-color: #755b73;
-$dark-panel-color: #30202f;
+$accent-color: #EBEAE1;
+$light-panel-color: $accent-color;
+$dark-panel-color: #203D5D;
 $body-text-color: #1B1B1B;
 
 // Font Stacks
@@ -75,20 +75,29 @@ body{
 }
 
 .btn {
-	border: none;
+	border: 2px solid $light-panel-color;
 	font-family: $font-stack;
 	text-transform: uppercase;
 	outline: none;
-	width: 155px;
-	height: 70px;
-	background-color: $accent-color;
+	width: 130px;
+	height: 60px;
+	margin: 15px;
+	background-color: $dark-panel-color;
+	color: $light-panel-color;
 	text-decoration: none;
+
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .btn:hover{
 	cursor: pointer;
 	background-color: $light-panel-color;
-	color: $accent-color;
+	color: $dark-panel-color;
+	//color: $accent-color;
 }
 
 .comment_author{
